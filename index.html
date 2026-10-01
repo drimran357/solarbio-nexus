@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="BioSolar Nexus develops a modular, decentralised energy-food-waste system for resilient communities in Ukraine.">
+<title>BioSolar Nexus | Energy • Food • Waste</title>
+<style>
+:root{
+  --navy:#073b63;--blue:#0c72b8;--green:#4c9a2a;--lime:#78be20;
+  --gold:#f7bd18;--ink:#15313f;--muted:#62727c;--soft:#f4f8f5;--white:#fff;
+  --red:#c8102e;--max:1180px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}
+.topbar{background:#082d49;color:#fff;font-size:.88rem;padding:.45rem 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid #e8eef0;backdrop-filter:blur(10px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:76px}
+.brand{display:flex;align-items:center;gap:.8rem;font-weight:800}
+.brandmark{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--gold) 0 28%,var(--blue) 28% 55%,var(--green) 55% 100%);color:white;border:4px solid white;box-shadow:0 0 0 1px #dce8eb;font-size:1.3rem}
+.brand small{display:block;font-weight:600;color:var(--muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.menu{display:flex;gap:1.25rem;align-items:center;font-weight:650;font-size:.94rem}.menu a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.82rem 1.1rem;border-radius:999px;background:var(--green);color:#fff;font-weight:750;box-shadow:0 8px 24px rgba(76,154,42,.18)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(118deg,#05375e 0%,#0b6599 54%,#25844c 100%);color:white}
+.hero:before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;right:-230px;top:-310px;border:95px solid rgba(247,189,24,.14)}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border-radius:50%;right:45px;bottom:-330px;border:80px solid rgba(255,255,255,.08)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:4rem;align-items:center;padding:96px 0 86px}
+.kicker{display:inline-flex;gap:.55rem;align-items:center;background:rgba(255,255,255,.13);padding:.42rem .75rem;border-radius:999px;font-weight:750;font-size:.82rem;letter-spacing:.03em}
+.hero h1{font-size:clamp(3rem,7vw,6rem);line-height:.94;margin:1.1rem 0 .7rem;letter-spacing:-.045em}
+.hero h1 span{color:#ffd133}.hero .subtitle{font-size:clamp(1.12rem,2vw,1.45rem);max-width:760px;color:#ecf8fc}
+.hero-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}.ghost{background:transparent;border:1px solid rgba(255,255,255,.55);box-shadow:none}
+.hero-card{background:rgba(255,255,255,.96);color:var(--ink);padding:1.65rem;border-radius:24px;box-shadow:0 26px 70px rgba(0,0,0,.22)}
+.loop{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1rem}
+.loop div{background:var(--soft);border-radius:18px;padding:1rem;border:1px solid #e3ece6}.loop strong{display:block;color:var(--green);font-size:1.35rem}
+.section{padding:80px 0}.section.alt{background:#f7faf9}.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem}
+h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;margin:.45rem 0 1rem;letter-spacing:-.035em}
+.lede{font-size:1.14rem;color:var(--muted);max-width:810px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.card{background:#fff;border:1px solid #e3ebed;border-radius:20px;padding:1.45rem;box-shadow:0 10px 30px rgba(10,45,65,.05)}
+.icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:#eaf6ec;color:var(--green);font-size:1.3rem;font-weight:900}
+.card h3{margin:.8rem 0 .3rem}.card p{margin:0;color:var(--muted)}
+.tech{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.system{background:linear-gradient(145deg,#eef8ef,#f7fbff);border:1px solid #deece6;border-radius:28px;padding:2rem}
+.flow{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.flow div{background:white;border-radius:18px;padding:1.1rem;border:1px solid #e0eaec}.flow b{display:block;color:var(--navy)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}.stat{border-top:4px solid var(--gold);padding:1.2rem;background:#fff;border-radius:0 0 15px 15px;box-shadow:0 8px 24px rgba(0,0,0,.04)}.stat strong{font-size:2rem;display:block;color:var(--navy)}
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:.7rem;margin-top:2rem}.step{position:relative;background:#fff;border:1px solid #e2e9eb;border-radius:16px;padding:1rem;min-height:130px}.step span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800}.step h4{margin:.6rem 0 .25rem}.step p{font-size:.88rem;margin:0;color:var(--muted)}
+.partners{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}.partner{min-height:155px;border:1px solid #e2e9eb;border-radius:18px;padding:1.2rem;background:#fff;display:flex;flex-direction:column;justify-content:center}.partner.lead{border-top:5px solid var(--red)}.partner small{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.06em}.partner h3{margin:.35rem 0}.partner p{margin:0;color:var(--muted);font-size:.92rem}
+.funding{background:#082f50;color:white}.funding .wrap{display:grid;grid-template-columns:1fr .9fr;gap:3rem;align-items:center}.fundingbox{background:white;color:var(--ink);border-radius:22px;padding:1.5rem}.fundinglogos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.logo-placeholder{min-height:105px;border:1px dashed #aab8bf;border-radius:16px;display:grid;place-items:center;text-align:center;padding:1rem;font-weight:800;color:var(--navy);background:#fbfcfc}
+.news{display:grid;grid-template-columns:2fr 1fr;gap:1.3rem;margin-top:2rem}.news-main{min-height:300px;border-radius:22px;padding:2rem;background:linear-gradient(145deg,#0a5a88,#287d51);color:white;display:flex;flex-direction:column;justify-content:end}.news-side{display:grid;gap:1.3rem}.news-side .card{padding:1.25rem}
+footer{background:#061f31;color:#dce8ed;padding:55px 0 28px}footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}footer h3{color:#fff}footer a{color:#dce8ed}footer .fine{border-top:1px solid rgba(255,255,255,.14);margin-top:2rem;padding-top:1rem;font-size:.85rem;color:#aabdc6}
+.security{font-size:.82rem;color:#7e8d94;margin-top:.8rem}
+@media(max-width:900px){.menu{display:none}.hero .wrap,.tech,.funding .wrap{grid-template-columns:1fr}.hero-card{max-width:620px}.grid3,.partners{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr 1fr}.news{grid-template-columns:1fr}}
+@media(max-width:600px){.grid3,.partners,.stats,.timeline,.flow,.fundinglogos,footer .cols{grid-template-columns:1fr}.topbar .wrap{display:block}.hero .wrap{padding:70px 0}.hero h1{font-size:3.2rem}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap"><span>BioSolar Nexus — Decentralised Energy • Food • Waste Innovation</span><span>Project No. 10162664 · 2026–2027</span></div>
+</div>
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home"><span class="brandmark">↻</span><span>BioSolar Nexus<small>Energy • Food • Waste</small></span></a>
+    <div class="menu">
+      <a href="#about">About</a><a href="#technology">Technology</a><a href="#progress">Progress</a><a href="#partners">Partners</a><a href="#impact">Impact</a><a href="#contact">Contact</a>
+      <a class="btn" href="#funding">Funding</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="kicker">☀ Ukraine · UK collaboration</span>
+      <h1>Waste to <span>resilience.</span></h1>
+      <p class="subtitle">BioSolar Nexus is developing a modular, off-grid clean-energy platform that integrates biogas, solar energy, thermal storage and smart control to turn organic waste into useful energy and agricultural resources.</p>
+      <div class="hero-actions"><a class="btn" href="#technology">Explore the system</a><a class="btn ghost" href="#progress">Project progress</a></div>
+    </div>
+    <aside class="hero-card">
+      <div class="eyebrow">The Nexus</div>
+      <h3 style="font-size:1.7rem;margin:.35rem 0">Closing the loop between waste, energy and food</h3>
+      <div class="loop">
+        <div><strong>Waste</strong>Organic feedstocks</div>
+        <div><strong>Energy</strong>Power + useful heat</div>
+        <div><strong>Food</strong>Nutrient recovery</div>
+        <div><strong>Resilience</strong>Decentralised supply</div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="eyebrow">About BioSolar Nexus</div>
+    <h2>Integrated infrastructure for resilient communities</h2>
+    <p class="lede">The project brings together renewable generation, organic-waste valorisation and thermal-energy management in a single modular platform designed for cold-climate operation and decentralised use in Ukraine.</p>
+    <div class="grid3">
+      <article class="card"><div class="icon">☀</div><h3>Clean energy</h3><p>Solar PVT, biogas CHP and energy storage are integrated to provide reliable electricity and useful heat.</p></article>
+      <article class="card"><div class="icon">↻</div><h3>Circular resources</h3><p>Organic waste is converted into renewable biogas while nutrient-rich digestate can return value to agriculture.</p></article>
+      <article class="card"><div class="icon">⌁</div><h3>Local resilience</h3><p>A modular, autonomous architecture supports local operation, skills development and future replication.</p></article>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>24</strong>months</div>
+      <div class="stat"><strong>£1.49m</strong>project budget</div>
+      <div class="stat"><strong>4</strong>core partners</div>
+      <div class="stat"><strong>7</strong>work packages</div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="technology">
+  <div class="wrap tech">
+    <div>
+      <div class="eyebrow">Technology</div>
+      <h2>One modular platform. Multiple energy and resource flows.</h2>
+      <p class="lede">BioSolar Nexus combines mature technologies in a new integrated configuration, with thermal management and digital control designed to maintain robust operation in demanding conditions.</p>
+      <p>Rather than treating energy, sanitation and agricultural resources as separate challenges, the platform connects them: organic feedstocks support biogas production; biogas and solar resources supply electricity and heat; thermal storage balances demand; and digestate provides a route for nutrient recovery.</p>
+    </div>
+    <div class="system">
+      <div class="flow">
+        <div><b>01 · Anaerobic digestion</b>Organic waste → renewable biogas</div>
+        <div><b>02 · Solar PVT</b>Solar electricity + useful heat</div>
+        <div><b>03 · Micro-CHP</b>Biogas → electricity + thermal energy</div>
+        <div><b>04 · Thermal storage</b>PCM-buffered heat management</div>
+        <div><b>05 · Battery system</b>Electrical balancing and autonomy</div>
+        <div><b>06 · IoT control</b>Monitoring, diagnostics and optimisation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="progress">
+  <div class="wrap">
+    <div class="eyebrow">Project progress</div>
+    <h2>From design to demonstration</h2>
+    <p class="lede">The project has moved through system definition and detailed design into procurement and fabrication, with integration, testing and pilot deployment forming the next stages.</p>
+    <div class="timeline">
+      <div class="step"><span>✓</span><h4>System architecture</h4><p>Interfaces and system concept defined.</p></div>
+      <div class="step"><span>✓</span><h4>Detailed design</h4><p>Design pack and control strategy completed.</p></div>
+      <div class="step"><span>✓</span><h4>Procurement</h4><p>Principal equipment and supply routes established.</p></div>
+      <div class="step"><span>4</span><h4>Fabrication</h4><p>Subsystem fabrication and local integration progressing.</p></div>
+      <div class="step"><span>5</span><h4>Integration & testing</h4><p>Mechanical, electrical, thermal and control validation.</p></div>
+      <div class="step"><span>6</span><h4>Pilot & monitoring</h4><p>Demonstration in the Kyiv Region followed by performance monitoring.</p></div>
+    </div>
+    <p class="security">For security reasons, the public website does not publish precise pilot-site addresses, coordinates, access arrangements or other sensitive infrastructure details.</p>
+  </div>
+</section>
+
+<section class="section alt" id="partners">
+  <div class="wrap">
+    <div class="eyebrow">Consortium</div>
+    <h2>A UK–Ukraine partnership</h2>
+    <p class="lede">The consortium combines academic leadership, industrial engineering, local deployment capability and community engagement.</p>
+    <div class="partners">
+      <div class="partner lead"><small>Lead organisation</small><h3>University of Leicester</h3><p>Project leadership, system integration, thermal engineering, modelling, monitoring and research dissemination.</p></div>
+      <div class="partner"><small>UK industrial partner</small><h3>Future Cycle Limited</h3><p>Biogas and waste-management technology, system procurement, integration and commissioning.</p></div>
+      <div class="partner"><small>Ukraine industrial partner</small><h3>Climhouse Energy LLC</h3><p>Local engineering, fabrication coordination, deployment, regulatory support and maintenance planning.</p></div>
+      <div class="partner"><small>Ukraine NGO partner</small><h3>NCSD</h3><p>Community engagement, GEDSI, training, monitoring, evaluation and stakeholder coordination.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="impact">
+  <div class="wrap">
+    <div class="eyebrow">Impact</div>
+    <h2>Designed for recovery — built for replication</h2>
+    <div class="grid3">
+      <article class="card"><h3>Energy resilience</h3><p>Supports decentralised access to electricity and useful heat where conventional infrastructure may be constrained or disrupted.</p></article>
+      <article class="card"><h3>Resource efficiency</h3><p>Creates value from organic waste while reducing reliance on imported fuels and conventional fertiliser inputs.</p></article>
+      <article class="card"><h3>Skills & scale-up</h3><p>Builds practical capability through knowledge transfer, community engagement and a replicable system architecture.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section funding" id="funding">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:#ffd133">Funding & programme</div>
+      <h2>Supported through InnovateUkraine</h2>
+      <p>BioSolar Nexus is supported through the <strong>InnovateUkraine</strong> programme, funded by the UK Government through the <strong>Foreign, Commonwealth & Development Office (FCDO)</strong> under <strong>UK International Development</strong>.</p>
+      <p>This website follows the programme communications protocol for public-facing project information.</p>
+    </div>
+    <div class="fundingbox">
+      <div class="fundinglogos">
+        <div class="logo-placeholder">INNOVATE<br>UKRAINE</div>
+        <div class="logo-placeholder">UK International<br>Development</div>
+      </div>
+      <p style="margin-bottom:0;color:#62727c;font-size:.9rem">Official programme and funder artwork will replace these temporary text marks in the next iteration.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="eyebrow">Latest</div><h2>Project updates</h2>
+    <div class="news">
+      <article class="news-main"><small>Q3 2026</small><h3 style="font-size:2rem;margin:.3rem 0">BioSolar Nexus advances from design into fabrication and integration</h3><p style="margin:0">Major design, procurement, site-readiness and social-impact activities have progressed, preparing the project for system assembly, testing and deployment.</p></article>
+      <div class="news-side">
+        <article class="card"><small>2026</small><h3>System design completed</h3><p>Architecture, key interfaces and control strategy defined.</p></article>
+        <article class="card"><small>2026</small><h3>Building local capability</h3><p>Training, GEDSI and community-engagement activities continue alongside technical delivery.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div><h3>BioSolar Nexus</h3><p>Decentralised Energy-Food-Waste Innovation for Crisis-Affected Settlements.</p><p>Lead organisation: University of Leicester, UK.</p></div>
+      <div><h3>Explore</h3><p><a href="#about">About</a><br><a href="#technology">Technology</a><br><a href="#progress">Progress</a><br><a href="#partners">Partners</a></p></div>
+      <div><h3>Project</h3><p>Project No. 10162664<br>January 2026 – December 2027<br>UK–Ukraine collaboration</p></div>
+    </div>
+    <div class="fine">Supported through InnovateUkraine, funded by the UK Government through the Foreign, Commonwealth & Development Office under UK International Development. © 2026 BioSolar Nexus.</div>
+  </div>
+</footer>
+</body>
+</html>
