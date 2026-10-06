@@ -9,20 +9,25 @@
 :root{--ink:#102b3b;--blue:#07365d;--green:#2f7d4a;--gold:#ffd12a;--muted:#61727d;--line:#dfe7eb;--paper:#f6f9fa}
 *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
 .wrap{width:min(1120px,92%);margin:auto}.top{background:#082f50;color:#fff;padding:.7rem 0;text-align:center;font-weight:700}
-nav{background:#fff;border-bottom:1px solid var(--line)}nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;gap:1rem}
-.brand{font-size:1.25rem;font-weight:800;color:var(--ink);text-decoration:none}.back{color:#0a5a87;text-decoration:none;font-weight:700}
+nav{background:#fff;border-bottom:1px solid var(--line)}nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;gap:1rem}
+.brand{display:flex;align-items:center;gap:.8rem;font-size:1.25rem;font-weight:800;color:var(--ink);text-decoration:none}.brand img{width:62px;height:62px;object-fit:contain;border-radius:8px}
+.back{color:#0a5a87;text-decoration:none;font-weight:700}
 .hero{background:linear-gradient(130deg,#07365d,#0a547d);color:#fff;padding:72px 0}.hero h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.05;margin:.2rem 0 1rem}.hero p{font-size:1.15rem;max-width:850px}
-main{padding:60px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.8rem}
-.logo-space{min-height:170px;border:1px dashed #a8b7bf;border-radius:16px;display:grid;place-items:center;text-align:center;padding:1rem;color:var(--muted);margin-bottom:1.1rem;background:#fbfdfe}
-.card h2{margin:.4rem 0}.btn{display:inline-block;background:#0a5a87;color:#fff;text-decoration:none;font-weight:800;padding:.8rem 1rem;border-radius:10px;margin-top:.5rem}
+main{padding:60px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.8rem;display:flex;flex-direction:column}
+.logo-space{min-height:200px;border:1px solid #e3eaed;border-radius:16px;display:grid;place-items:center;text-align:center;padding:1.2rem;margin-bottom:1.1rem;background:#fff}
+.logo-space img{max-width:100%;max-height:155px;object-fit:contain}
+.card h2{margin:.4rem 0}.btn{display:inline-block;align-self:flex-start;background:#0a5a87;color:#fff;text-decoration:none;font-weight:800;padding:.8rem 1rem;border-radius:10px;margin-top:auto}
 .note{margin-top:2rem;background:#fff8dc;border-left:5px solid var(--gold);padding:1rem 1.2rem;border-radius:10px}
 footer{background:#061e30;color:#d9e6eb;padding:28px 0;margin-top:50px}
-@media(max-width:760px){.grid{grid-template-columns:1fr}}
+@media(max-width:760px){.grid{grid-template-columns:1fr}nav .wrap{align-items:flex-start}.back{margin-top:.8rem}}
 </style>
 </head>
 <body>
 <div class="top">Integrating solar energy, biogas and smart storage for resilient, sustainable communities in Ukraine.</div>
-<nav><div class="wrap"><a class="brand" href="../index.html">BioSolar Nexus</a><a class="back" href="../index.html">Back to project website</a></div></nav>
+<nav><div class="wrap">
+<a class="brand" href="../index.html"><img src="../BioSolar%20Nexus%20Logo%20_%20Project%20Logo.jpg" alt="BioSolar Nexus logo"><span>BioSolar Nexus</span></a>
+<a class="back" href="../index.html">Back to project website</a>
+</div></nav>
 <header class="hero"><div class="wrap">
 <p style="font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#ffd12a">Funding acknowledgement</p>
 <h1>Supported through InnovateUkraine</h1>
@@ -31,13 +36,13 @@ footer{background:#061e30;color:#d9e6eb;padding:28px 0;margin-top:50px}
 <main><div class="wrap">
 <div class="grid">
 <section class="card">
-<div class="logo-space"><strong>InnovateUkraine programme logo</strong><br><span>Repository logo will be displayed here once the uploaded asset is visible on the main branch.</span></div>
+<div class="logo-space"><img src="../Innovate%20Ukraine%20White%20Background.png" alt="InnovateUkraine"></div>
 <h2>InnovateUkraine</h2>
-<p>BioSolar Nexus is supported through the InnovateUkraine programme. The programme supports energy innovation and collaboration contributing to Ukraine's recovery and future resilience.</p>
+<p>BioSolar Nexus is supported through the InnovateUkraine programme, which enables UK and Ukrainian organisations to develop and demonstrate energy innovations that can contribute to Ukraine's recovery, resilience and future energy system.</p>
 <a class="btn" href="https://innovateukraine.io/" target="_blank" rel="noopener">Visit InnovateUkraine</a>
 </section>
 <section class="card">
-<div class="logo-space"><strong>UK International Development logo</strong><br><span>Repository logo will be displayed here once the uploaded asset is visible on the main branch.</span></div>
+<div class="logo-space"><img src="../UK%20International%20Development%20Logo%20Colour%20White.jpg" alt="UK International Development"></div>
 <h2>UK International Development</h2>
 <p>The project acknowledges UK Government support through UK International Development. Further information on UK clean energy innovation support is available through the Ayrton Fund.</p>
 <a class="btn" href="https://ayrtonfund.info/" target="_blank" rel="noopener">Visit the Ayrton Fund</a>
